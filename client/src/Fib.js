@@ -35,7 +35,8 @@ class Fib extends Component {
   };
 
   renderSeenIndexes() {
-    console.log("Values : " + this.state.seenIndexes);
+    const reducer = (x, y) => x + "," + y
+    return this.state.seenIndexes.reduce(reducer)
   }
 
   renderValues() {
