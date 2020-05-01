@@ -1,6 +1,6 @@
 
 docker build -t youngsingtan/multi-client:latest -t youngsingtan/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t youngsingtan/multi-server:latest -t youngsingtan/multi-client:$SHA -f ./server/Dockerfile ./server
+docker build -t youngsingtan/multi-server:latest -t youngsingtan/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t youngsingtan/multi-worker:latest -t youngsingtan/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push youngsingtan/multi-client:latest
